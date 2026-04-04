@@ -62,7 +62,7 @@ Every push to `main` on GitHub automatically syncs to HF Spaces via a GitHub Act
 
 After pushing, check:
 - GitHub Actions tab → "Sync to Hugging Face Spaces" workflow should show green
-- App live at https://huggingface.co/spaces/zhuoxiaowang/field-rotation-calculator
+- App live https://huggingface.co/spaces/zhuoxiaowang/field-rotation-calculator
 
 ## Run Locally
 
