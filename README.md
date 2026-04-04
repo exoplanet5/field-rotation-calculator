@@ -3,9 +3,7 @@ title: Field Rotation Calculator
 emoji: "\U0001F52D"
 colorFrom: blue
 colorTo: red
-sdk: streamlit
-sdk_version: "1.44.1"
-app_file: app.py
+sdk: docker
 pinned: false
 license: mit
 short_description: Alt-Az telescope field rotation speed & parallactic angle
