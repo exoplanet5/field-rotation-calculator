@@ -34,6 +34,36 @@ Azimuth measured North-through-East (0-360 deg).
 | Parallactic Angle | tan(q) = sin(HA)cos(phi) / [cos(Dec)sin(phi) - sin(Dec)cos(phi)cos(HA)] |
 | Rotation Speed | dq/dt = -cos(phi)cos(Az)/cos(Alt) x 15.041 arcsec/s |
 
+## Deploy to Hugging Face Spaces via GitHub
+
+Every push to `main` on GitHub automatically syncs to HF Spaces via a GitHub Action.
+
+### One-time setup
+
+1. **Create a Hugging Face token**
+   - Go to https://huggingface.co/settings/tokens
+   - Click **Create new token**
+   - Choose **Write** access (required to push to Spaces)
+   - Copy the token
+
+2. **Add the token to your GitHub repo**
+   - Go to your repo **Settings** → **Secrets and variables** → **Actions**
+   - Click **New repository secret**
+   - Name: `HF_TOKEN`
+   - Value: paste the token from step 1
+   - Click **Add secret**
+
+3. **Push to deploy** — every `git push origin main` will:
+   - Trigger `.github/workflows/sync-to-hf.yml`
+   - Mirror the repo to HF Spaces
+   - HF builds and serves the Streamlit app automatically
+
+### Verify
+
+After pushing, check:
+- GitHub Actions tab → "Sync to Hugging Face Spaces" workflow should show green
+- App live at https://huggingface.co/spaces/zhuoxiaowang/field-rotation-calculator
+
 ## Run Locally
 
 ```bash
