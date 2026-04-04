@@ -1,7 +1,7 @@
 """
 Field Rotation Calculator — Streamlit Web UI
 
-Run:  streamlit run field_rotation_web.py
+Run:  streamlit run app.py
 """
 
 import io
