@@ -7,7 +7,7 @@ sdk: streamlit
 app_file: app.py
 pinned: false
 license: mit
-short_description: Alt-Az mount tracking speed, acceleration, and field rotation
+short_description: Alt-Az tracking speed, acceleration & field rotation
 ---
 
 # Alt-Az Telescope Tracking Specs
